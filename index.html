@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDb Movie Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Search</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Enter movie name (e.g. Inception)...">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="errorMessage" class="error hidden"></div>
+        <div id="movieDetails" class="movie-card hidden">
+            <img id="moviePoster" src="" alt="Movie Poster">
+            <div class="info">
+                <h2 id="movieTitle"></h2>
+                <p><strong>Year:</strong> <span id="movieYear"></span></p>
+                <p><strong>Genre:</strong> <span id="movieGenre"></span></p>
+                <p><strong>Director:</strong> <span id="movieDirector"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
